@@ -1,0 +1,60 @@
+.bug-view{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 62vw;
+    border:1px solid black;
+    box-shadow: 2px 2px black;
+    margin-top:3%;
+    margin-left:10%;
+    margin-bottom:10%;
+    padding-bottom:40px;
+    border-radius: 5px;
+    background-color: var(--prim-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+   
+
+
+}
+
+.bug-view h1{
+    min-width: 100%;
+    text-align: center;
+    padding-top:15px;
+    color: black ;
+    font-size: 3rem;
+    padding-bottom: 20px;
+    border-bottom: 1px groove white;
+}
+
+.close-btn{
+    position: absolute;
+    margin-right: 2%;
+    margin-top:1%;
+    right:0;
+    top:0;
+    border: 0;
+    background:none;
+    padding:0;
+    size: large;
+    
+}
+.close-btn:hover{
+    background: none;
+}
+.markComplete{
+    position:absolute;
+    bottom:0;
+    background: rgb(3, 90, 3);
+    color:white;
+ 
+    
+}
+.markComplete:hover{
+    background: rgb(0, 49, 0);
+}

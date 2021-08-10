@@ -1,0 +1,82 @@
+.topbar{
+    overflow: hidden;
+    position:fixed;
+    z-index:10;
+    width:80%;
+    background-color: var(--prim-color);
+    height: 8%;
+    margin-left:20%;
+    padding-left:10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.233);
+
+}
+.topbar h3{
+    float: left;
+    display: block;
+    text-align: center;
+    margin-right: 1.5%;
+    padding: 2px;
+    
+}
+.topbar button{
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 1.5%;
+    margin-right:2%;
+    font-size: 17px;
+  }
+  .menu{
+    background-color: #f1f1f1;
+    min-width: 160px;
+    cursor: pointer;
+  
+    border: none;
+    margin-top: 4.4%;
+    margin-right:0%;
+    font-size: 17px;
+    position:fixed;
+    z-index:150;
+    right:0;
+    border-radius:5px;
+    
+  }
+  .menu a{
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .menu:hover{
+    background-color: #ddd
+  }
+  .changePassword button{
+      margin:0;
+      background-color:blue;
+    color:white;
+  }
+  .changePassword button:hover{
+      background-color:  rgb(3, 3, 151);
+  }
+  .changePassword input{
+    width: 75%;
+    height: 30px;
+    border-radius: 5px;
+    border:none;
+    margin:10px; 
+    padding-left:5px;
+  }
+  .changePassword{
+    background-color: var(--prim-color);
+    border:2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    width:20%;
+    height:20%;
+    right:0;
+    position:absolute;
+    margin-top: 5%;
+    z-index: 100;
+  
+  }

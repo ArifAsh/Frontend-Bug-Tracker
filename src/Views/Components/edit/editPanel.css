@@ -1,0 +1,25 @@
+.edit-panel{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 10px;
+   
+}
+.edit{
+    background: orange;
+    color:white;
+   
+    padding: 5px 20px;
+}
+.delete{
+    background: rgb(190, 15, 15);
+    color:white;
+    
+    padding: 5px 20px;
+}
+.edit:hover{
+    background:rgb(197, 129, 3);
+}
+.delete:hover{
+    background:rgb(160, 10, 10)
+}
