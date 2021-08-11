@@ -49,7 +49,7 @@ export default (props)=>{
             .then((response=>{
                 alert(response.data.message)
                 if (response.data.success){
-                    window.location.reload();
+                    window.location.href = window.location.href;
                     
                 }
                 return ;
@@ -57,7 +57,7 @@ export default (props)=>{
                   console.log(err)
                 return })
             
-            }
+            }else{
 
             
      
@@ -65,7 +65,7 @@ export default (props)=>{
         .then((response)=>{
             alert(response.data.message)
                 if (response.data.success){
-                    window.location.reload();
+                    window.location.href = window.location.href;;
                     return false;
                 }
               }).catch((err)=>{
@@ -73,6 +73,7 @@ export default (props)=>{
                   return;
                 })       
     }
+}
 
 
     return(

@@ -42,7 +42,7 @@ export default (props)=>{
     .then((response)=>{
         alert(response.data.message)
     })
-    window.location.reload()
+    window.location.href = window.location.href;
     }
     function markCompletedClicked(){
         if (auth.demo){
@@ -54,7 +54,7 @@ export default (props)=>{
         .then((response)=>{
             alert(response.data.message)
         })
-        window.location.reload()
+        window.location.href = window.location.href;
         
 
         

@@ -61,7 +61,7 @@ export default()=>{
         .then((response)=>{
             alert(response.data.message)
             if(response.data.success){
-                window.location.reload(); 
+                window.location.href = window.location.href; 
                 return false;   
             }
          })

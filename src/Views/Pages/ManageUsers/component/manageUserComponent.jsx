@@ -40,7 +40,7 @@ export default (props)=>{
             alert(response.data.message)    
         })).catch((err=>console.log(err)))
         
-            window.location.reload()
+        window.location.href = window.location.href;
             return false
         }
     return(

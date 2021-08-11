@@ -53,7 +53,7 @@ export default (props) =>{
                 .then((response)=>{
                    alert(response.data.message)
                 })
-                window.location.reload(); 
+                window.location.href = window.location.href;
                 return false;   
             }else if(props.title ==="Create Bug" && !auth.demo){
                 if (parseInt(bugObject.assigned) === 1){
@@ -66,7 +66,7 @@ export default (props) =>{
                     const data = response.data;
                     console.log(data);
                 })
-                window.location='/viewbugs'; 
+                window.location.href = window.location.href; 
                 return false;
             }
             else{

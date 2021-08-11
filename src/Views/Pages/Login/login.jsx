@@ -82,7 +82,7 @@ export default()=>{
                     console.log(response)
                     
                 })
-                window.location.reload(); 
+                window.location.href = window.location.href; 
             }else{
                 alert(response.data.message)}
         })
