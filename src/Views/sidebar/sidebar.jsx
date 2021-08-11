@@ -14,7 +14,7 @@ export default ()=>{
         dispatch(signOut());
         }else{
             
-            axios.get("https://bug-tracker-arif.herokuapp.com/logout?token="+auth.token)
+            axios.get("https://bug-tracker-arif.herokuapp.com/app/logout?token="+auth.token)
             .then((response)=>{
                 const data = response.data;
                 console.log(data)

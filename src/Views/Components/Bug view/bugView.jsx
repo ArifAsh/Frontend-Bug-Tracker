@@ -38,7 +38,7 @@ export default (props)=>{
         dispatch(getNewId(newBugIds))
         return
     }
-    axios.post("https://bug-tracker-arif.herokuapp.com/delete?token="+bugs.currBugToken)
+    axios.post("https://bug-tracker-arif.herokuapp.com/app/delete?token="+bugs.currBugToken)
     .then((response)=>{
         alert(response.data.message)
     })
@@ -50,7 +50,7 @@ export default (props)=>{
             return
         }
         bug.priority = 4;
-        axios.post("https://bug-tracker-arif.herokuapp.com/update?token="+bugs.currBugToken,bug)
+        axios.post("https://bug-tracker-arif.herokuapp.com/app/update?token="+bugs.currBugToken,bug)
         .then((response)=>{
             alert(response.data.message)
         })

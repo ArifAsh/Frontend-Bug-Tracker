@@ -36,6 +36,7 @@ const slice = createSlice({
             localStorage.setItem('token',"");
             localStorage.setItem('admin',"");
             localStorage.setItem( 'name',"");
+            window.location = "/";
             
         },
         getAllUsers:(state,action)=>{

@@ -49,7 +49,7 @@ export default (props) =>{
                     console.log("here")
                     bugObject.assigned = auth.clients[0].fullName;
                 }
-                await axios.post("https://bug-tracker-arif.herokuapp.com/update?token="+bugs.currBugToken,bugObject) 
+                await axios.post("https://bug-tracker-arif.herokuapp.com/app/update?token="+bugs.currBugToken,bugObject) 
                 .then((response)=>{
                    alert(response.data.message)
                 })
@@ -61,7 +61,7 @@ export default (props) =>{
                 }
                 console.log(bugObject.assigned)
                 setClicked({isClicked: true, display: true})
-                await axios.post("https://bug-tracker-arif.herokuapp.com/createBug",bugObject)
+                await axios.post("https://bug-tracker-arif.herokuapp.com/app/createBug",bugObject)
                 .then((response)=>{
                     const data = response.data;
                     console.log(data);

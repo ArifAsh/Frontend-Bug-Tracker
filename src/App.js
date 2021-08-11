@@ -33,14 +33,14 @@ function App() {
      email:localStorage.getItem('email')
      }))
      if (JSON.parse(localStorage.getItem('admin'))){
-      axios.get("https://bug-tracker-arif.herokuapp.com/getBugs")
+      axios.get("https://bug-tracker-arif.herokuapp.com/app/getBugs")
          .then((response)=>{
              const data = response.data
              dispatch(setBugs({
                  bugs: data.bugs}))
          })
      }else{
-      axios.get("https://bug-tracker-arif.herokuapp.com/getSpecificBugs?name="+ localStorage.getItem('name'))
+      axios.get("https://bug-tracker-arif.herokuapp.com/app/getSpecificBugs?name="+ localStorage.getItem('name'))
       .then((response)=>{
           const data = response.data
           dispatch(setBugs({
@@ -48,7 +48,7 @@ function App() {
       })
      }
      
-     axios.get("https://bug-tracker-arif.herokuapp.com/users")
+     axios.get("https://bug-tracker-arif.herokuapp.com/app/users")
          .then((response=>{
              const users = response.data.users;
              const clients = users.filter(user => user.role === "Client")

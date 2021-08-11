@@ -57,7 +57,7 @@ export default()=>{
     async function submit(e){
         e.preventDefault();
         
-        await axios.post("https://bug-tracker-arif.herokuapp.com/changePassword",pass)
+        await axios.post("https://bug-tracker-arif.herokuapp.com/app/changePassword",pass)
         .then((response)=>{
             alert(response.data.message)
             if(response.data.success){

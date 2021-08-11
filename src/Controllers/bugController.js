@@ -6,48 +6,48 @@ export function retrieveBugs(){
 
     data.push(new bugModel({
         _id:0,
-        name:"Crash on load",
-        details:"crashes after 3 seconds",
+        name:"Bug Tracker",
+        details:"Crashes after 3 seconds",
         steps: "Open app and it crashes",
         version:"V2.0",
         type: 1,
-        assigned: "Arif Ash",
-        creator: "JOe Bloggs",
+        assigned: "Client 1",
+        creator: "Arif Ash",
         priority: 1,
         time:"23:38"
     }))
     data.push(new bugModel({
         _id:1,
-        name:" Wont load",
-        details:"crashes after 3 seconds",
+        name:" Personal Website",
+        details:"Crashes after 5 seconds",
         steps: "Open app and it crashes",
         version:"V2.0",
         type: 4,
-        assigned: "Joe Mama",
-        creator: "JOe Bloggs",
+        assigned: "Client 1",
+        creator: "Arif Ash",
         priority: 3,
         time:"23:38"
     }))
     data.push(new bugModel({
         _id:2,
-        name:" Test data",
-        details:" suspect data",
+        name:" Project 5",
+        details:" App malfunctions",
         steps: "Open app and it crashes",
         version:"V2.0",
         type: 3,
-        assigned: "Mr test",
+        assigned: "Client 1",
         creator: "Arif Ash",
         priority: 2,
         time:"22:00"
     }))
     data.push(new bugModel({
         _id:3,
-        name:" Bug tracker",
-        details:" Not trackin g bugs",
-        steps: "Bugs never tracked",
+        name:"Sudoku App",
+        details:" Not tracking tiles",
+        steps: "Onclick doesn't work",
         version:"V2.0",
         type: 2,
-        assigned: "Mr test",
+        assigned: "Client 1",
         creator: "Arif Ash",
         priority: 2,
         time:"22:00"
@@ -59,7 +59,7 @@ export function retrieveBugs(){
         steps: "merge sort not dispalyed on screen",
         version:"V2.0",
         type: 1,
-        assigned: "Mr test",
+        assigned: "Client 1",
         creator: "Arif Ash",
         priority: 2,
         time:"22:00"
@@ -71,7 +71,7 @@ export function retrieveBugs(){
         steps: "Click on empty grid but nothing happens",
         version:"V2.0",
         type: 1,
-        assigned: "Mr test",
+        assigned: "Client 1",
         creator: "Arif Ash",
         priority: 3,
         time:"22:00"
@@ -83,7 +83,7 @@ export function retrieveBugs(){
         steps: "Click on empty grid but nothing happens",
         version:"V2.0",
         type: 3,
-        assigned: "Mr test",
+        assigned: "Client 1",
         creator: "Arif Ash",
         priority: 4,
         time:"22:00"

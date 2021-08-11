@@ -14,7 +14,7 @@
 
 .login-panel{
     background-color: var(--prim-color);
-    border:3px solid black;
+    border:1px solid black;
     border-radius: 10px;
     padding-bottom:10px;
     text-align: center;

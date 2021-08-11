@@ -45,7 +45,7 @@ export default (props)=>{
             password : userObject.password,
             role : userObject.role,
         }
-        await axios.post("https://bug-tracker-arif.herokuapp.com/signUp", registered)
+        await axios.post("https://bug-tracker-arif.herokuapp.com/app/signUp", registered)
             .then((response=>{
                 alert(response.data.message)
                 if (response.data.success){
@@ -61,7 +61,7 @@ export default (props)=>{
 
             
      
-        await axios.post("https://bug-tracker-arif.herokuapp.com/updateUser?token="+props.user._id, userObject)
+        await axios.post("https://bug-tracker-arif.herokuapp.com/app/updateUser?token="+props.user._id, userObject)
         .then((response)=>{
             alert(response.data.message)
                 if (response.data.success){

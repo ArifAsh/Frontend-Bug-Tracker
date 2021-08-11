@@ -53,8 +53,8 @@ export default()=>{
             email: formInput.name,
             password: formInput.password
         }
-    
-        await axios.post("https://bug-tracker-arif.herokuapp.com/signIn",info)
+      
+        await axios.post("https://bug-tracker-arif.herokuapp.com/app/signIn",info)
         .then((response)=>{
             const data = response.data;
             
@@ -77,7 +77,7 @@ export default()=>{
                 localStorage.setItem('email',data.user.email);
                 localStorage.setItem('admin',JSON.stringify(admin));
                 localStorage.setItem( 'name',data.user.fullName);
-                axios.get("https://bug-tracker-arif.herokuapp.com/verify?token="+data.token)
+                axios.get("https://bug-tracker-arif.herokuapp.com/app/verify?token="+data.token)
                 .then((response)=>{
                     console.log(response)
                     

@@ -35,7 +35,7 @@ export default (props)=>{
     }
     async function deleteUser(user){
         
-        await axios.post("https://bug-tracker-arif.herokuapp.com/deleteUser?token="+user._id)
+        await axios.post("https://bug-tracker-arif.herokuapp.com/app/deleteUser?token="+user._id)
         .then((response=>{
             alert(response.data.message)    
         })).catch((err=>console.log(err)))
